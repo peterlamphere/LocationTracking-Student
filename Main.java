@@ -11,18 +11,30 @@ class Main {
 
 
     System.out.println("Welcome to the data simulator");
-    
+   
+    // Test the distance method. Should be 13.0
+    System.out.println ("The distance between (0,0) and (5,12) is " + Person.distance (new Point(0,0), new Point(5,12)));
+
+    // Test the data simulator
     System.out.println("Adding some sample data for Bronx County");
     County bronx = new County();
+
+    // Sample person 1
     double jhonny[][] = {
           {4.0, 4.5, 5.0, 3.0, 6.0, 5.3},
           {6.0, 2.0, 7.5, 4.0, 5.0, 2.3}
     };
+    // Lower right corner: 
+    // Upper left corner: 
 
+    // Sample person 2
     double angel[][] = {
           {2.0, 4.5, 5.0, 3.0, 5.0, 3.3},
           {1.5, 2.0, 9.0, 4.0, 5.0, 2.3}
     };
+    // Lower right corner: 
+    // Upper left corner: 
+
 
     bronx.add (new Person (jhonny[0],jhonny[1]));
     bronx.add (new Person (angel[0],angel[1]));

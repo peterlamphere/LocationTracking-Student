@@ -14,7 +14,7 @@ class Person {
 
 // Helper method to calculate the distance between two points using 
 // the distance formula
-  private double distance (Point p1, Point p2) {
+  public static double distance (Point p1, Point p2) {
 
     // If you have forgotten your geometry, look here: 
     // https://www.khanacademy.org/math/basic-geo/basic-geometry-pythagorean-theorem/pythagorean-theorem-distance/a/distance-formula
@@ -38,13 +38,17 @@ class Person {
 
     // The two points at the upper left and
     // lower right corners of the box. 
-    
+
     // You can modify these constructors if you want
     Point max = new Point(), min = new Point();
 
     // *************************   
     // **** Write code here ****
     // *************************   
+    
+    // print out the minimum and maximum just to check 
+    System.out.print ("Lower right corner" + min);
+    System.out.println (" Upper left corner" + max);
     
     // Use the distance method to return the distance 
     return distance (max, min);
